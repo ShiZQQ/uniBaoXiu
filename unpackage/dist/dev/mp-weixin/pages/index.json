@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "tn-tabbar": "/tuniao-ui/components/tn-tabbar/tn-tabbar",
+    "home": "/pages/home/home",
+    "repair_report": "/pages/repair_report/repair_report",
+    "message": "/pages/message/message",
+    "user": "/pages/user/user"
+  }
+}

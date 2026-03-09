@@ -1,0 +1,1 @@
+<chat class="vue-ref" vue-id="bc646440-1" id="chat" username="{{username}}" chatType="singleChat" data-ref="chat" data-event-opts="{{[['^onClickInviteMsg',[['onClickMsg']]]]}}" bind:onClickInviteMsg="__e" bind:__l="__l"></chat>

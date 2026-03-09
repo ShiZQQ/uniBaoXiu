@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "chat-suit-emoji": "/components/chat/inputbar/suit/emoji/emoji",
+    "chat-suit-image": "/components/chat/inputbar/suit/image/image",
+    "chat-suit-location": "/components/chat/inputbar/suit/location/location",
+    "chat-suit-main": "/components/chat/inputbar/suit/main/main",
+    "chat-suit-ptopcall": "/components/chat/inputbar/suit/ptopcall/ptopcall",
+    "chat-suit-attach": "/components/chat/inputbar/suit/attach/index"
+  }
+}

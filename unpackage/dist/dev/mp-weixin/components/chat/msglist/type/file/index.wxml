@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['previewFile',['$event']]]]]}}" class="attach-msg" bindtap="__e"><image class="fileIcon" src="/static/images/msgFile.png"></image><text class="time">{{msg.msg.filename+$root.m0}}</text></view>

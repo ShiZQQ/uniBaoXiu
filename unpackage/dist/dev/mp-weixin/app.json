@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index",
+    "pages/home/home",
+    "pages/guarantee/guarantee",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/repair_report/repair_report",
+    "pages/complain/complain",
+    "pages/order_details/order_details",
+    "pages/message_details/message_details",
+    "pages/user_update/user_update",
+    "pages/chatroom/chatroom",
+    "pages/notice/notice"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

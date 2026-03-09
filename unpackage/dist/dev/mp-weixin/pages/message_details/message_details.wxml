@@ -1,0 +1,1 @@
+<view class="container"><view class="card"><view class="card-header">{{message.title}}</view><view class="card-content">{{message.content}}</view><view class="card-footer">{{message.time}}</view></view><view data-event-opts="{{[['tap',[['goBack',['$event']]]]]}}" class="back-btn" bindtap="__e">返回</view></view>

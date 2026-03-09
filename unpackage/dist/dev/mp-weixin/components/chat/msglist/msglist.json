@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-modal": "/uview-ui/components/u-modal/u-modal",
+    "u-field": "/uview-ui/components/u-field/u-field",
+    "u-action-sheet": "/uview-ui/components/u-action-sheet/u-action-sheet",
+    "audio-msg": "/components/chat/msglist/type/audio/audio",
+    "file-msg": "/components/chat/msglist/type/file/index"
+  }
+}

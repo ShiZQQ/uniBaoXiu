@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为Tuniao UI的集成样式文件，为scss预处理器，其中包含了一些"tn-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * Tuniao UI自定义的css类名和scss变量，均以"tn-"开头，不会造成冲突，请放心使用 
+ */
+.template-order.data-v-0b723994 {
+  background-color: #F5F7FA;
+  min-height: 100vh;
+}
+.nav-placeholder.data-v-0b723994 {
+  width: 100%;
+  background-color: #fff;
+}
+.order__container.data-v-0b723994 {
+  width: 100%;
+  height: calc(100vh - var(--custom-nav-height, 0px));
+  display: flex;
+  flex-direction: column;
+}
+.order__tabs-wrap.data-v-0b723994 {
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+.order__tabs.data-v-0b723994 {
+  width: 100%;
+}
+.order__swiper.data-v-0b723994 {
+  flex: 1;
+  width: 100%;
+}
+.order__swiper__item.data-v-0b723994 {
+  width: 100%;
+  height: 100%;
+}
+.order__scroll-view.data-v-0b723994 {
+  width: 100%;
+  padding-bottom: 20rpx;
+}
+.order__item.data-v-0b723994 {
+  margin: 20rpx;
+  padding: 36rpx 26rpx;
+  background-color: #FFFFFF;
+  border-radius: 15rpx;
+  box-shadow: 0rpx 0rpx 50rpx 0rpx rgba(0, 0, 0, 0.07);
+}
+.order__item.data-v-0b723994:first-child {
+  margin-top: 20rpx;
+}
+.order__item__head.data-v-0b723994 {
+  margin-bottom: 20rpx;
+}
+.order__item__head__title.data-v-0b723994 {
+  font-weight: bold;
+  line-height: normal;
+  font-size: 32rpx;
+  color: #333;
+}
+.order__item__content.data-v-0b723994 {
+  margin-bottom: 30rpx;
+}
+.order__item__content__image.data-v-0b723994 {
+  margin-right: 20rpx;
+}
+.order__item__content__image image.data-v-0b723994 {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 10rpx;
+}
+.order__item__content__title.data-v-0b723994 {
+  height: auto;
+  min-height: 50px;
+  padding-right: 40rpx;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.5;
+}
+.order__item__operation.data-v-0b723994 {
+  margin-top: 10rpx;
+}
+.empty-data.data-v-0b723994 {
+  padding: 60rpx 20rpx;
+  text-align: center;
+  min-height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tn-padding-bottom.data-v-0b723994 {
+  padding-bottom: calc(env(safe-area-inset-bottom) + 20rpx);
+  height: calc(env(safe-area-inset-bottom) + 20rpx);
+}
+.tn-custom-nav-bar__back.data-v-0b723994,
+.login.data-v-0b723994 {
+  display: none;
+}
+

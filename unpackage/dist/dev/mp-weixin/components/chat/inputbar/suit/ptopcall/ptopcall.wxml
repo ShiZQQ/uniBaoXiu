@@ -1,0 +1,1 @@
+<block wx:if="{{visible}}"><view class="wraper"><view><button type="default" data-event-opts="{{[['tap',[['callVideo',['$event']]]]]}}" bindtap="__e">会议模式</button><button type="default" data-event-opts="{{[['tap',[['cancel',['$event']]]]]}}" bindtap="__e">取消</button></view></view></block>

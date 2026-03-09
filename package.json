@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@tencentcloud/chat-uikit-uniapp": "^1.2.9",
+    "aegis-mp-sdk": "^1.38.6",
+    "axios": "^1.5.1",
+    "cos-wx-sdk-v5": "^1.4.13",
+    "tim-wx-sdk": "^2.27.5",
+    "unplugin-vue2-script-setup": "^0.11.4"
+  }
+}

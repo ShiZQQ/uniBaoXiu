@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-tabs-swiper": "/tuniao-ui/components/tn-tabs-swiper/tn-tabs-swiper"
+  }
+}

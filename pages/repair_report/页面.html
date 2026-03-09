@@ -1,0 +1,109 @@
+1. 首先创建一个Spring Boot项目，在pom.xml中添加以下依赖：
+
+```
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-jpa</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.47</version>
+		<scope>runtime</scope>
+	</dependency>
+</dependencies>
+```
+
+2. 创建一个User实体类，用于映射数据库中的表：
+
+```
+@Entity
+@Table(name = "user")
+public class User {
+
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private Long id;
+
+private String username;
+
+private String password;
+
+// getter、setter 略
+}
+```
+
+3. 创建一个接口来操作User实体类，继承JpaRepository：
+
+```
+public interface UserRepository extends JpaRepository<User, Long> {
+
+	User findByUsernameAndPassword(String username, String password);
+	}
+	```
+
+	4. 创建一个Service，处理用户信息相关的业务逻辑：
+
+	```
+	@Service
+	public class UserService {
+
+	@Autowired
+	private UserRepository userRepository;
+
+	public User login(String username, String password) {
+	return userRepository.findByUsernameAndPassword(username, password);
+	}
+
+	public void register(User user) {
+	userRepository.save(user);
+	}
+	}
+	```
+
+	5. 创建一个Controller处理HTTP请求：
+
+	```
+	@RestController
+	@RequestMapping("/api")
+	public class UserController {
+
+	@Autowired
+	private UserService userService;
+
+	@PostMapping("/login")
+	public Result<User> login(@RequestBody User user) {
+		User loginUser = userService.login(user.getUsername(), user.getPassword());
+		if (loginUser != null) {
+		return Result.success(loginUser);
+		} else {
+		return Result.error(CodeMsg.LOGIN_ERROR);
+		}
+		}
+
+		@PostMapping("/register")
+		public Result<String> register(@RequestBody User user) {
+			userService.register(user);
+			return Result.success("注册成功");
+			}
+			}
+			```
+
+			6. 在Uniapp中，使用uni.requset发送HTTP请求：
+
+			```
+			uni.request({
+			url: 'http://localhost:8080/api/login',
+			method: 'POST',
+			data: {
+			username: 'username',
+			password: 'password'
+			},
+			success: (res) => {
+			console.log(res.data);
+			}
+			});
+			```
+
+			以上就是利用Spring Boot和MySQL实现登录注册功能的详细代码。我还需要更多的信息才能继续。请告诉我您需要的帮助。
